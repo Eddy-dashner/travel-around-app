@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  font-family: "nexa bold";
+  overflow: hidden;
+}
+
+#backgroundContainer {
+  background-image: url("Background.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#socialIcons {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+}
+
+.social-text {
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+#mainTitle {
+  color: white;
+  margin-bottom: 20px;
+}
+#submain {
+  color: white;
+  margin-bottom: 5px;
+}
+
+#destinationInput {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+#inputContainer {
+  position: relative;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#inputWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#searchButton {
+  padding: 13px;
+  border: none;
+  margin-top: -40px;
+  margin-left: 89%;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#searchButton:hover {
+  background-color: #45a049;
+}
+
+#suggestions-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+#suggestions {
+  list-style-type: none;
+  padding: 0;
+  white-space: nowrap;
+  animation: slide 10s linear infinite;
+}
+
+#suggestions li {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  color: #f0f0f0;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+#suggestions li:hover {
+  background-color: #f0f0f0;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#sendButtonContainer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#sendButton {
+  padding: 8px 12px;
+  border: none;
+  background-color: #008cba;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#sendButton:hover {
+  background-color: #fff;
+}
+
+#calendarContainer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#calendarInput {
+  padding: 8px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  #destinationInput {
+    margin-top: 10px;
+  }
+
+  #searchButton {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 568px) {
+  #destinationInput {
+    margin-top: 10px;
+  }
+
+  #searchButton {
+    margin-top: -40px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #destinationInput {
+    margin-top: 10px;
+  }
+
+  #searchButton {
+    margin-top: -40px;
+  }
+}

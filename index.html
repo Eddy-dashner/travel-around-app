@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destination Selector</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="backgroundContainer">
+      <div id="socialIcons">
+        <a href="#" class="social-text">Login</a>
+        <a href="#" class="social-text">Signup</a>
+      </div>
+
+      <h1 id="mainTitle">Destination Selector</h1>
+      <h2 id="submain">The optimal AI for your journeys</h2>
+
+      <div id="inputContainer">
+        <div id="inputWrapper">
+          <input
+            type="text"
+            id="destinationInput"
+            placeholder="Type your destination here"
+          />
+          <button id="searchButton">Search</button>
+        </div>
+      </div>
+
+      <div id="suggestions-container">
+        <ul id="suggestions"></ul>
+      </div>
+
+      <div id="calendarContainer">
+        <input type="date" id="calendarInput" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
