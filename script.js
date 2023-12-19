@@ -1,8 +1,36 @@
-// Get references to the input and suggestions ul
+
+var a = document.getElementById("loginBtn");
+var b = document.getElementById("registerBtn");
+var x = document.getElementById("login");
+var y = document.getElementById("register");
+
+function login() {
+    x.style.left = "4px";
+    y.style.right = "-520px";
+    a.className += " white-btn";
+    b.className = "btn";
+    x.style.opacity = 1;
+    y.style.opacity = 0;
+}
+
+function register() {
+    x.style.left = "-510px";
+    y.style.right = "5px";
+    a.className = "btn";
+    b.className += " white-btn";
+    x.style.opacity = 0;
+    y.style.opacity = 1;
+
+}
+
+function goHome() {
+    window.location.href = 'index.html';
+}
+
+
 const destinationInput = document.getElementById('destinationInput');
 const suggestionsList = document.getElementById('suggestions');
 
-// Hardcoded suggestions for demonstration purposes
 const allSuggestions = [
     'Paris, France',
     'Tokyo, Japan',
@@ -16,22 +44,15 @@ const allSuggestions = [
     'Dubai, UAE'
 ];
 
-// Add event listener to input for real-time suggestions
 destinationInput.addEventListener('input', updateSuggestions);
 
 function updateSuggestions() {
-    // Clear previous suggestions
     suggestionsList.innerHTML = '';
-
-    // Get the current input value
     const inputText = destinationInput.value.toLowerCase();
-
-    // Filter suggestions based on the input value
     const filteredSuggestions = allSuggestions.filter(suggestion =>
         suggestion.toLowerCase().includes(inputText)
     );
 
-    // Display filtered suggestions as a list
     filteredSuggestions.forEach(suggestion => {
         const suggestionItem = document.createElement('li');
         suggestionItem.textContent = suggestion;

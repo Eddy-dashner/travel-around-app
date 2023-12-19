@@ -3,6 +3,93 @@ body {
   font-family: "nexa bold";
   overflow: hidden;
 }
+/* ---------------------------registration----------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 110vh;
+  background-image: url("Background.gif");
+}
+
+.nav {
+  position: fixed;
+  top: 10px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  margin-left: 80%;
+  z-index: 100;
+}
+
+.form-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 512px;
+  height: 420px;
+  overflow: hidden;
+  z-index: 2;
+  margin-left: 20%;
+}
+
+.login-container {
+  position: absolute;
+  left: 4px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+}
+
+.register-container {
+  position: absolute;
+  right: -520px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+}
+.nav-menu-btn .home-btn {
+  background-color: #008cba;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-menu-btn .home-btn:hover {
+  background-color: #00688b;
+}
+.top {
+  color: #fff;
+  font-size: 20px;
+}
+.input-box {
+  padding: 5px;
+}
+.input-field {
+  padding: 5px;
+  width: 30vh;
+  height: 30px;
+  border-radius: 20px;
+}
+.one {
+  color: #f0f0f0;
+}
+.submit {
+  border-radius: 20px;
+  background-color: blue;
+  font-size: large;
+  cursor: pointer;
+}
+/* -------------------------- end ------------*/
 
 #backgroundContainer {
   background-image: url("Background.gif");
