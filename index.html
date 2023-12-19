@@ -9,6 +9,9 @@
   <body>
     <div id="backgroundContainer">
       <div id="socialIcons">
+        <ion-icon class="icons" name="logo-instagram"></ion-icon>
+        <ion-icon class="icons" name="logo-tiktok"></ion-icon>
+        <ion-icon class="icons" name="mail-outline"></ion-icon>
         <a href="signup.html" class="social-text">Register</a>
       </div>
 
@@ -22,7 +25,9 @@
             id="destinationInput"
             placeholder="Type your destination here"
           />
-          <button id="searchButton">Search</button>
+          <button id="searchButton">
+            <ion-icon name="send-outline"></ion-icon>
+          </button>
         </div>
       </div>
 
@@ -36,5 +41,13 @@
     </div>
 
     <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

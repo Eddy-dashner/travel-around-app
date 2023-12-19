@@ -108,7 +108,12 @@ body {
   top: 50px;
   right: 10px;
 }
-
+.icons {
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  color: #ddd;
+}
 .social-text {
   text-decoration: none;
   font-size: 16px;
@@ -152,17 +157,15 @@ body {
 
 #searchButton {
   padding: 13px;
-  border: none;
-  margin-top: -40px;
-  margin-left: 89%;
-  background-color: #4caf50;
-  color: white;
-  border-radius: 20px;
+  margin-top: -45px;
+  margin-left: 97%;
+  border-radius: 28px;
   cursor: pointer;
+  color: #00688b;
 }
 
 #searchButton:hover {
-  background-color: #45a049;
+  background-color: grey;
 }
 
 #suggestions-container {
